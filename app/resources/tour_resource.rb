@@ -1,3 +1,3 @@
 class TourResource < JSONAPI::Resource
-  attributes :title
+  attributes :title, :number_of_shows
 end
