@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190202223113) do
+ActiveRecord::Schema.define(version: 20190202235831) do
 
   create_table "shows", force: :cascade do |t|
     t.date "date"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20190202223113) do
     t.string "venue"
     t.string "address"
     t.string "promoter"
+    t.integer "tour_id"
+    t.index ["tour_id"], name: "index_shows_on_tour_id"
   end
 
   create_table "tours", force: :cascade do |t|
