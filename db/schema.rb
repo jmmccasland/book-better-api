@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190202235831) do
+ActiveRecord::Schema.define(version: 20190205025009) do
 
   create_table "shows", force: :cascade do |t|
     t.date "date"
-    t.datetime "startTime"
-    t.datetime "endTime"
+    t.time "startTime"
+    t.time "endTime"
     t.string "venue"
     t.string "address"
     t.string "promoter"
