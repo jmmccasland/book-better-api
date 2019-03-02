@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190302200949) do
+ActiveRecord::Schema.define(version: 20190302205616) do
 
   create_table "shows", force: :cascade do |t|
     t.integer "tour_id"
     t.integer "status", default: 0
     t.string "city"
+    t.string "state"
+    t.date "date"
     t.index ["tour_id"], name: "index_shows_on_tour_id"
   end
 

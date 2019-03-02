@@ -1,4 +1,4 @@
 class ShowResource < JSONAPI::Resource
-  attributes :city, :status
+  attributes :city, :state, :date, :status
   has_one :tour
 end
