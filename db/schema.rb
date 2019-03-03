@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190302230004) do
+ActiveRecord::Schema.define(version: 20190303020107) do
 
   create_table "promoters", force: :cascade do |t|
     t.string "name"
@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 20190302230004) do
     t.string "city"
     t.string "state"
     t.date "date"
-    t.decimal "latitude"
-    t.decimal "longitude"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["tour_id"], name: "index_shows_on_tour_id"
   end
 
